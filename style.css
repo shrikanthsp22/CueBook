@@ -1,7 +1,191 @@
 body{
+    /* position: absolute; */
+    width:90%;
     padding: 10px;
+    background-color: rgb(238, 238, 238);
     
 }
+.small_screen_text{
+    display: none;
+}
+/* Header section(Logo,search button and search bar) */
 .header{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    border-radius: 5px;
+    padding: 8px 0px;
+    height: 10%;
+    background-color:white;
+    
+}
+.logo_container{
+    display: inline-block;
+    vertical-align:middle;
+    text-align: center;
+    height: 100%;
+}
+.logo{
+    /* position: relative; */
+    display: inline-block;
     width: 100%;
+    vertical-align:middle;
+    height: 50px;
+    width: 50%;
+   
+}
+.search_form{
+    /* box-sizing: border-box; */
+    display: inline-block;
+    width: 100%;
+    vertical-align:middle;
+}
+.search_btn ,.search_input{
+    font-size: 18px;
+    padding:12px;
+    background-color: rgb(238, 238, 238);
+    border:none;
+}
+.search_btn{
+    /* background-color: white; */
+    width: 10%;
+    border-radius: 10px 0px 0px 10px;
+    
+}
+.search_input{
+    width: 85%;
+    border-radius: 0px 10px 10px 0px;
+    text-decoration: none;
+}
+.search_input:focus,.search_btn:focus{
+    outline: 0;
+}
+
+/* ----------------------Container------------------------------------ */
+
+.container{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+
+/* Menu and Scroll Page */
+/* ----------------------------------------------------------------------------------------- */
+.menu{
+    /* width: 30%; */
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+.image,.text.newsfeed,.newsfeed_text,.pp,.pp_text,.messenger,.messenger_text,.watch,.watch_text,.text{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.profile_container{
+    margin-bottom: 1rem;
+}
+.items_container{
+    width:100%;
+}
+.pp{
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.text{
+    
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.pp_text{
+    font-weight: bold;
+}
+
+.item_container:hover{
+    font-weight: bold;
+    
+}
+
+
+/* -------------------------------------Pages----------------------------------------- */
+.pages{
+    background-color: white;
+    margin-top: 25px;
+}
+.single_post{
+    margin-top: 15px;
+}
+.user_name_time,.profile_pic{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    padding-left: 11px;
+}
+.profile_image_post{
+    border-radius: 50%;
+}
+
+.time,.time_p_tag{
+    padding-top: 0;
+    margin-top: 0;
+}
+.user_name,.user_name_h4{
+    padding-bottom: 0px;
+    padding-top: 5px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/* Post body */
+.post_body{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+/* Likes and comments */
+.likes_comments{
+    width: 100%;
+    
+}
+.lc{
+    display: inline-block;
+    width: 49%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.hr_tag{
+    height: 1px !important;
+    color: rgb(179, 179, 179);
+    background-color: rgb(221, 221, 221);
+    border: none;
+    padding:none;
+}
+
+
+
+
+
+/* Responsive */
+
+@media(max-width:1088px){
+    .search_form{
+        display: none;
+    }
+    .header{
+        grid-template-columns: 25% 50% 25%;
+    }
+    .menu{
+        display: none;
+    }
+    .small_screen_text{
+        display: block;
+        text-align: center;
+        font-family: cursive;
+    }
+    
+    
 }

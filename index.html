@@ -4,22 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font awesome -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+    <!-- Style sheet -->
     <link rel="stylesheet" href="style.css">
 
     <title>CueBook</title>
 </head>
 <body>
+    <!-- Header -->
 <header class="header">
-    <img src="" alt="Logo">
-    <input type="text" placeholder="Search..">
+    <!-- Logo -->
+    <div class="logo_container">
+            <img 
+            class="logo"
+            src="./Assets/facebook.svg" 
+            alt="Logo"
+             />
+    </div>
+        
+
+        <h3 class="small_screen_text">CueBook</h3>
+<!-- Search form -->
+        <form action="" class="search_form">
+            <button class="search_btn"><i class="fa fa-search search_icon"></i></button><input type="search_input" class="search_input" placeholder="Search">
+        </form>
+    
 </header>
 <div class="container">
     <div class="menu">
-        Menu
+        <div class="first_container">
+                <div class="profile_container items_container item_container">
+                        <img src="./Assets/pp.jpg" width="30px" height="30px" alt="My profile" class="pp image"> <p class="pp_text text">My User name</p>
+                </div>
+                <div class="other_3_items_container items_container">
+                    <!-- News Feed -->
+                    <div class="newsfeed_container item_container">
+                        <img src="./Assets/newsFeed.svg" width="25px" height="25px" alt="" class="newsfeed image"> <p class="newsfeed_text text">News Feed</p>
+                    </div>
+                    <!-- Messenger -->
+                    <div class="messenger_container item_container">
+                            <img src="./Assets/messenger.svg" width="25px" height="25px" alt="" class="messenger image"> <p class="messenger_text text">Messenger</p>
+                        </div>
+                    <!-- Watch -->
+                    <div class="watch_container item_container">
+                            <img src="./Assets/tv.svg" width="25px" height="25px" alt="" class="watch image">   <p class="watch_text text"> Watch</p>
+                    </div>
+
+                    
+                </div>
+            
+
+        </div> 
+        
+        <div class="explore_container">
+            <h4 class="explore">Explore</h4>
+
+            <!-- Pages -->
+            <div class="pages_container item_container">
+                    <img src="./Assets/pages.svg" width="25px" height="25px" alt="" class="pages image">   <p class="pages_text text"> Pages</p>
+            </div>
+            <!-- Groups -->
+            <div class="pages_container item_container">
+                    <img src="./Assets/groups.svg" width="25px" height="25px" alt="" class="pages image">   <p class="pages_text text"> Groups</p>
+            </div>
+            <!-- MarketPlace -->
+            <div class="pages_container item_container">
+                <img src="./Assets/marketplace.svg" width="25px" height="25px" alt="" class="pages image">   <p class="pages_text text"> MartketPlace</p>
+            </div>
+            <!-- events -->
+            <div class="pages_container item_container">
+                <img src="./Assets/events.svg" width="25px" height="25px" alt="" class="pages image">   <p class="pages_text text"> Events</p>
+                </div>
+            <!-- Fundraisers -->
+            <div class="pages_container item_container">
+                <img src="./Assets/fundraisers.svg" width="25px" height="25px" alt="" class="pages image">   <p class="pages_text text"> Fundraisers</p>
+                </div>
+            <!-- SeeMore -->
+
+
+        </div>
     </div>
     <div class="pages">
-        Pages
+        <!-- These have flex boxes in columns to have cards -->
+
+        <div class="single_post">
+            <!-- Post Head -->
+            <div class="post_head">
+                <div class="profile_pic">
+                    <img src="./Assets/pp.jpg" width="60px" height="60px" alt="My profile" class="profile_image_post">
+                </div>
+                <div class="user_name_time">
+                    <div class="user_name">
+                        <h4 class="user_name_h4">Shrikanth P S</h4>
+                    </div>
+                    <div class="time">
+                        <p class="time_p_tag" style="color: grey">september 7 at 11:25AM <img src="./Assets/people.svg" width="15px" height="15px" alt=""></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post Body -->
+            <div class="post_body">
+                <p class="post_text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores sequi, autem voluptatibus consequatur necessitatibus tempore earum in ullam officiis culpa porro blanditiis, quis odit vel illum sunt suscipit, placeat illo.
+                </p>
+                <div class="likes_comments">
+                    <p style="text-align: left ;color: grey;" class="likes lc">
+                                15 Likes
+                    </p>
+                    <p style="text-align: right ;color: grey;" class="comments lc">
+                                3 Comments
+                    </p>
+                </div>
+
+                <!-- Line -->
+                <hr class="hr_tag">
+
+                
+            </div>
+        </div>
+
     </div>
 </div>
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
