@@ -76,7 +76,7 @@ body{
     padding-left: 10%;
     padding-top: 2%;
 }
-.image,.text.newsfeed,.newsfeed_text,.pp,.pp_text,.messenger,.messenger_text,.watch,.watch_text,.text{
+.image,.pp,.text{
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -87,6 +87,9 @@ body{
 }
 .items_container{
     width:100%;
+}
+.explore_container{
+    margin-top: 25px;
 }
 .pp{
     vertical-align: middle;
@@ -109,12 +112,20 @@ body{
 
 
 /* -------------------------------------Pages----------------------------------------- */
-.pages{
-    background-color: white;
-    margin-top: 25px;
+.posts_container{
+    height: 100vh;
+    /* background-color: white; */
+    margin-top: 10px;
+    overflow: scroll;
+    /* overflow-y: scroll; */
 }
 .single_post{
+    background-color: white;
     margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
 }
 .user_name_time,.profile_pic{
     display: inline-block;
@@ -136,16 +147,23 @@ body{
     margin-bottom: 0px;
     margin-top: 0px;
 }
+.user_name_h4{
+    display: inline;
+}
+
 
 /* Post body */
 .post_body{
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     padding-top: 5px;
+    margin-bottom: 0;
 }
-
-/* Likes and comments */
+.post_text{
+    color: #1c1e21;
+}
+/* Likes and comments display*/
 .likes_comments{
     width: 100%;
     
@@ -165,6 +183,98 @@ body{
     padding:none;
 }
 
+/* Like,Comment and share buttons */
+.likeandcommentbuttons{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+}
+.lcs-btn{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    justify-content: center;
+}
+.lcs_item{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+   
+}
+.lcs-btn:hover{
+    background-color: rgb(240, 236, 236);
+}
+.lcs-btn:focus
+{
+    outline: none;
+}
+/* Commented items */
+.actual_comment{
+    background-color: #e9ebee;
+    padding: 12px;
+    border-radius:20px;
+}
+.c-items{
+    display: inline-block;
+}
+
+.nc{
+    display: inline;
+}
+.commenter_name{
+    color: #385898;
+}
+.actual_comment_text{
+    color: #1c1e21;
+}
+.c_like_comment{
+    
+    padding-left:30px;
+}
+ul{
+   
+    list-style-type: none;
+    
+}
+li{
+    display: inline;
+    color: #385898;
+    
+}
+.clc_days{
+    color: #1c1e21;
+}
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.clc_days:hover{
+    text-decoration: none;
+    cursor:unset;
+}
+.comment_box{
+    background-color: #e9ebee;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    width: 80%;
+}
+.comment_box:focus{
+    outline:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -175,7 +285,7 @@ body{
     .search_form{
         display: none;
     }
-    .header{
+    /* .header{
         grid-template-columns: 25% 50% 25%;
     }
     .menu{
@@ -186,6 +296,6 @@ body{
         text-align: center;
         font-family: cursive;
     }
-    
+     */
     
 }
